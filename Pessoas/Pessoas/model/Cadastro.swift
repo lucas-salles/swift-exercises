@@ -36,7 +36,7 @@ class Cadastro {
     }
     
     func mov(from: Int, to: Int) {
-        self.lista.insert(self.lista[from], at: to + 1)
-        self.lista.remove(at: from)
+        let valor = self.lista.remove(at: from)
+        self.lista.insert(valor, at: to)
     }
 }
